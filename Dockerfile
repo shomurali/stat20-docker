@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions
 
 # https://github.com/rocker-org/rocker-versioned2/wiki/geospatial_e06f866673fa
-FROM rocker/geospatial:4.2.2
+FROM rocker/verse:4.3
 
 ENV TZ=Etc/UTC
 
@@ -38,4 +38,4 @@ WORKDIR /app
 EXPOSE 8000
 EXPOSE 8787
 
-CMD ["quarto", "preview", "--no-browser", "--port", "8000", "--host", "0.0.0.0"]
+# CMD ["quarto", "preview", "--no-browser", "--port", "8000", "--host", "0.0.0.0"]
