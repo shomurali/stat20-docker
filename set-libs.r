@@ -1,5 +1,11 @@
 #!/usr/bin/env Rscript
 
+# install2.r (littler) is a simple function for installing packages, but
+# it cannot install specific versions which is not great for reproducibility.
+# We write our own function below.
+# https://rocker-project.org/use/extending.html#install2.r
+# https://github.com/eddelbuettel/littler/issues/15
+
 set_libs_install_version <- function(set_name, set_libs) {
   print(paste("Installing packages for", set_name))
   for (i in seq(1, length(set_libs), 2)) {
