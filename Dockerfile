@@ -31,11 +31,9 @@ COPY set-libs.r /tmp/set-libs.r
 COPY stat20-r-packages.r /tmp/r-packages/
 RUN r /tmp/r-packages/stat20-r-packages.r
 
-RUN mkdir /app
+# Reduce the side of RSPM packages
+# https://rocker-project.org/use/extending.html
+RUN strip /usr/local/lib/R/site-library/*/libs/*.so
 
-WORKDIR /app
-
-EXPOSE 8000
+# RStudio port
 EXPOSE 8787
-
-# CMD ["quarto", "preview", "--no-browser", "--port", "8000", "--host", "0.0.0.0"]
