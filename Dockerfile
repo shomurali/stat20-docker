@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions
 
-# https://github.com/rocker-org/rocker-versioned2/wiki/geospatial_e06f866673fa
-FROM rocker/verse:4.3
+# https://github.com/rocker-org/rocker-versioned2/wiki/verse_0f4b22fe3b8c
+FROM rocker/verse:4.3.1
 
 ENV TZ=Etc/UTC
 
@@ -29,7 +29,8 @@ RUN apt-get update && \
 COPY set-libs.r /tmp/set-libs.r
 
 COPY stat20-r-packages.r /tmp/r-packages/
-RUN r /tmp/r-packages/stat20-r-packages.r
+RUN r /tmp/r-packages/stat20-r-packages.r && \
+    rm -rf /tmp/downloaded_packages /tmp/repos*.rds /tmp/file*
 
 # Reduce the side of RSPM packages
 # https://rocker-project.org/use/extending.html
