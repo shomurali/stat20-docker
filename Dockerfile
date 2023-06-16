@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions
 
-# https://github.com/rocker-org/rocker-versioned2/wiki/geospatial_e06f866673fa
-FROM rocker/verse:4.3
+# https://github.com/rocker-org/rocker-versioned2/wiki/verse_0f4b22fe3b8c
+FROM rocker/verse:4.3.1
 
 ENV TZ=Etc/UTC
 
