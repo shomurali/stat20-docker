@@ -29,7 +29,8 @@ RUN apt-get update && \
 COPY set-libs.r /tmp/set-libs.r
 
 COPY stat20-r-packages.r /tmp/r-packages/
-RUN r /tmp/r-packages/stat20-r-packages.r
+RUN r /tmp/r-packages/stat20-r-packages.r && \
+    rm -rf /tmp/downloaded_packages /tmp/repos*.rds /tmp/file*
 
 # Reduce the side of RSPM packages
 # https://rocker-project.org/use/extending.html
