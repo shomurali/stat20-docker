@@ -5,7 +5,7 @@ source("/tmp/set-libs.r")
 set_name <- "Stat 20"
 
 set_libs <- c(
-  "rmarkdown", "2.20",
+  "rmarkdown", "2.22",
   "plotly", "4.10.1",
   "patchwork", "1.1.2",
   "reshape2", "1.4.4",
@@ -15,7 +15,12 @@ set_libs <- c(
   "palmerpenguins", "0.1.1",
   "ggrepel", "0.9.3",
   "ggthemes", "4.2.4",
-  "latex2exp", "0.9.6"
+  "latex2exp", "0.9.6",
+  "markdown", "1.7",
+  "downlit", "0.4.3",
+  "xml2", "1.3.4",
+  "gt", "0.9.0",
+  "openintro", "2.4.0"
 )
 
 set_libs_install_version(set_name, set_libs)
