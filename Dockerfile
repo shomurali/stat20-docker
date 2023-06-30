@@ -36,5 +36,7 @@ RUN r /tmp/r-packages/stat20-r-packages.r && \
 # https://rocker-project.org/use/extending.html
 RUN strip /usr/local/lib/R/site-library/*/libs/*.so
 
+WORKDIR /home/rstudio
+
 # RStudio port
 EXPOSE 8787
