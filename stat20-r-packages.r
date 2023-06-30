@@ -14,7 +14,8 @@ set_libs <- c(
   "countdown", "0.4.0",
   "palmerpenguins", "0.1.1",
   "ggrepel", "0.9.3",
-  "ggthemes", "4.2.4"
+  "ggthemes", "4.2.4",
+  "latex2exp", "0.9.6"
 )
 
 set_libs_install_version(set_name, set_libs)
