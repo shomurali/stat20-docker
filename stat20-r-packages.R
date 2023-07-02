@@ -17,3 +17,4 @@ set_libs_install_version(set_name, set_libs)
 remotes::install_github("stat20/stat20data")
 
 print(paste("Done installing packages for", set_name))
+
