@@ -8,7 +8,8 @@ set_libs <- c(
   "rmarkdown", "2.20",
   "plotly", "4.10.1",
   "patchwork", "1.1.2",
-  "reshape2", "1.4.4"
+  "reshape2", "1.4.4",
+  "quarto", "1.2"
 )
 
 set_libs_install_version(set_name, set_libs)
