@@ -21,7 +21,8 @@ set_libs <- c(
   "xml2", "1.3.4",
   "gt", "0.9.0",
   "openintro", "2.4.0",
-  "janitor", "2.2.0"
+  "janitor", "2.2.0",
+  "quarto", "1.2"
 )
 
 set_libs_install_version(set_name, set_libs)
