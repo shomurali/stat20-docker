@@ -23,7 +23,7 @@ set_libs <- c(
   "openintro", "2.4.0",
   "janitor", "2.2.0",
   "quarto", "1.2",
-  "fs", "1.6.3",
+  "fs", "1.6.3"
 )
 
 set_libs_install_version(set_name, set_libs)
